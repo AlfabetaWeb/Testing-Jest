@@ -1,5 +1,16 @@
 
-const Car = Car;
+class Car {
+    name = "";
+    year = 0;
 
-module.exports.Car = Car;
+    constructor(name,year){
+        this.name = name;
+        this.year = year;
+    }
 
+    age(){
+        return 2022 - this.year;
+    }
+}
+
+module.exports = Car;
